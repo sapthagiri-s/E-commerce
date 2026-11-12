@@ -1,199 +1,3 @@
-
-/* ==================================================
-   ELECTROHUB - PREMIUM CATEGORIES PAGE
-   Theme: Plum | Purple | Mauve | Dusty Rose
-================================================== */
-
-
-/* ==================================================
-   1. ROOT VARIABLES
-================================================== */
-/*
-:root {
-    --primary-dark: #180E20;
-    --primary: #24152F;
-    --secondary: #633B70;
-
-    --accent: #D9B7C8;
-    --accent-dark: #B98BA9;
-
-    --background: #F8F4F7;
-    --card-background: #FFFFFF;
-
-    --text-dark: #24152F;
-    --text-light: #806A82;
-
-    --border-color: #E8D7E9;
-
-    --shadow:
-        0 8px 25px rgba(36, 21, 47, 0.08);
-}
-
-
-/* ==================================================
-   2. GENERAL
-================================================== */
-
-/* html {
-    scroll-behavior: smooth;
-}
-
-body {
-    background: var(--background);
-    color: var(--text-dark);
-    margin: 0;
-}
-
-* {
-    box-sizing: border-box;
-} */
-
-
-/* ==================================================
-   3. NAVIGATION BAR
-================================================== */
-
-/* .header {
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-
-    background: #FFFFFF;
-
-    box-shadow:
-        0 3px 20px rgba(36, 21, 47, 0.07);
-} */
-
-/* .navbar {
-    width: 100%;
-    max-width: 1500px;
-
-    min-height: 85px;
-
-    margin: auto;
-    padding: 15px 4%;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 25px;
-} */
-
-
-/* LOGO */
-/*
-.navbar .logo {
-    color: var(--primary) !important;
-
-    font-size: 25px;
-    font-weight: 800;
-
-    text-decoration: none;
-    white-space: nowrap;
-}
-
-.navbar .logo span {
-    color: var(--secondary);
-}
- */
-
-/* NAVIGATION LINKS */
-/*
-.nav-links {
-    display: flex;
-    align-items: center;
-
-    gap: 30px;
-
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-}
-
-.nav-links li {
-    list-style: none;
-}
-
-.nav-links a {
-    color: var(--primary) !important;
-
-    text-decoration: none;
-
-    font-size: 16px;
-    font-weight: 600;
-
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-    color: var(--secondary) !important;
-} */
-
-
-/* NAVIGATION ACTIONS */
-
-/* .nav-actions {
-    display: flex;
-    align-items: center;
-
-    gap: 22px;
-
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-}
-
-.nav-actions li {
-    list-style: none;
-}
-
-.nav-actions a {
-    color: var(--primary) !important;
-
-    text-decoration: none;
-    font-size: 18px;
-
-    transition: 0.3s;
-}
-
-.nav-actions a:hover {
-    color: var(--secondary) !important;
-} */
-
-
-/* SIGN IN BUTTON */
-/*
-.navbar .signin-btn {
-    display: inline-block;
-
-    background: var(--primary) !important;
-    color: #FFFFFF !important;
-
-    padding: 13px 28px;
-
-    border-radius: 35px;
-
-    font-size: 15px;
-    font-weight: 700;
-
-    text-decoration: none;
-
-    transition: all 0.3s ease;
-}
-
-.navbar .signin-btn:hover {
-    background: var(--secondary) !important;
-
-    color: #FFFFFF !important;
-
-    transform: translateY(-2px);
-} */
-
 /* ==================================================
    4. BREADCRUMB
 ================================================== */
@@ -211,11 +15,9 @@ body {
 
     font-size: 15px;
 
-    color: var(--text-light);
 }
 
 .breadcrumb a {
-    color: var(--secondary);
 
     text-decoration: none;
 
@@ -223,7 +25,6 @@ body {
 }
 
 .breadcrumb a:hover {
-    color: var(--primary);
 }
 
 
@@ -246,26 +47,11 @@ body {
 
     gap: 50px;
 
-    background:
-
-        radial-gradient(
-            circle at 85% 20%,
-            rgba(217, 183, 200, 0.25),
-            transparent 35%
-        ),
-
-        linear-gradient(
-            120deg,
-            var(--primary-dark),
-            var(--primary),
-            var(--secondary)
-        );
 
     border-radius: 25px;
 
     overflow: hidden;
 
-    color: #FFFFFF;
 }
 
 
@@ -287,7 +73,6 @@ body {
 .category-hero .hero-tag {
     display: inline-block;
 
-    color: var(--accent);
 
     font-size: 13px;
     font-weight: 700;
@@ -299,7 +84,6 @@ body {
 /* HERO HEADING */
 
 .category-hero .hero-content h1 {
-    color: #FFFFFF;
 
     font-size: clamp(34px, 4vw, 52px);
 
@@ -313,14 +97,12 @@ body {
 .category-hero .hero-content h1 span {
     display: block;
 
-    color: var(--accent);
 }
 
 
 /* HERO DESCRIPTION */
 
 .category-hero .hero-content p {
-    color: #E8D8E9;
 
     font-size: 17px;
 
@@ -335,9 +117,7 @@ body {
 .category-hero .hero-btn {
     display: inline-block;
 
-    background: var(--accent);
 
-    color: var(--primary) !important;
 
     padding: 15px 30px;
 
@@ -352,14 +132,10 @@ body {
 }
 
 .category-hero .hero-btn:hover {
-    background: #FFFFFF;
 
-    color: var(--primary) !important;
 
     transform: translateY(-4px);
 
-    box-shadow:
-        0 10px 25px rgba(217, 183, 200, 0.25);
 }
 
 
@@ -406,7 +182,6 @@ body {
 }
 
 .section-heading h2 {
-    color: var(--primary);
 
     font-size: 32px;
     font-weight: 800;
@@ -415,13 +190,11 @@ body {
 }
 
 .section-heading p {
-    color: var(--text-light);
 
     font-size: 15px;
 }
 
 .section-tag {
-    color: var(--secondary);
 
     font-size: 12px;
     font-weight: 700;
@@ -457,7 +230,6 @@ body {
 
     overflow: hidden;
 
-    background: var(--accent);
 
     cursor: pointer;
 
@@ -488,11 +260,6 @@ body {
 
     inset: 0;
 
-    background: linear-gradient(
-        to top,
-        rgba(24, 14, 32, 0.95),
-        rgba(36, 21, 47, 0.05) 80%
-    );
 }
 
 
@@ -501,8 +268,6 @@ body {
 .category-card:hover {
     transform: translateY(-7px);
 
-    box-shadow:
-        0 15px 35px rgba(36, 21, 47, 0.17);
 }
 
 .category-card:hover img {
@@ -520,11 +285,9 @@ body {
 
     z-index: 2;
 
-    color: #FFFFFF;
 }
 
 .category-info h3 {
-    color: #FFFFFF;
 
     font-size: 23px;
     font-weight: 700;
@@ -533,7 +296,6 @@ body {
 }
 
 .category-info p {
-    color: #E8D8E9;
 
     font-size: 13px;
 }
@@ -543,7 +305,6 @@ body {
 
     margin-top: 12px;
 
-    color: var(--accent);
 
     font-size: 13px;
     font-weight: 700;
@@ -565,14 +326,7 @@ body {
 
     border-radius: 20px;
 
-    background: linear-gradient(
-        110deg,
-        var(--primary),
-        var(--secondary),
-        var(--accent-dark)
-    );
 
-    color: #FFFFFF;
 
     display: flex;
 
@@ -583,7 +337,6 @@ body {
 }
 
 .offer-banner span {
-    color: #F1DCE9;
 
     font-size: 12px;
     font-weight: 700;
@@ -592,7 +345,6 @@ body {
 }
 
 .offer-banner h2 {
-    color: #FFFFFF;
 
     font-size: 32px;
 
@@ -600,7 +352,6 @@ body {
 }
 
 .offer-banner p {
-    color: #F1DCE9;
 
     font-size: 15px;
 }
@@ -608,9 +359,7 @@ body {
 .offer-banner a {
     display: inline-block;
 
-    background: var(--accent);
 
-    color: var(--primary) !important;
 
     text-decoration: none;
 
@@ -626,7 +375,6 @@ body {
 }
 
 .offer-banner a:hover {
-    background: #FFFFFF;
 
     transform: translateY(-3px);
 }
@@ -663,11 +411,8 @@ body {
 .filter-btn {
     padding: 11px 19px;
 
-    border: 1px solid var(--border-color);
 
-    background: #FFFFFF;
 
-    color: var(--primary);
 
     border-radius: 30px;
 
@@ -681,11 +426,8 @@ body {
 
 .filter-btn:hover,
 .filter-btn.active {
-    background: var(--primary);
 
-    color: #FFFFFF;
 
-    border-color: var(--primary);
 }
 
 
@@ -703,15 +445,11 @@ body {
 .product-tools select {
     padding: 13px 15px;
 
-    border: 1px solid var(--border-color);
 
     border-radius: 9px;
 
-    outline: none;
 
-    background: #FFFFFF;
 
-    color: var(--primary);
 
     font-size: 14px;
 }
@@ -722,10 +460,7 @@ body {
 
 .product-tools input:focus,
 .product-tools select:focus {
-    border-color: var(--accent-dark);
 
-    box-shadow:
-        0 0 0 3px rgba(185, 139, 169, 0.12);
 }
 
 
@@ -748,13 +483,7 @@ body {
 .products-section .product-card {
     min-width: 0;
 
-    background: linear-gradient(
-        145deg,
-        #FFFFFF,
-        #F8F4F7
-    );
 
-    border: 1px solid var(--border-color);
 
     border-radius: 16px;
 
@@ -764,17 +493,9 @@ body {
 }
 
 .products-section .product-card:hover {
-    background: linear-gradient(
-        135deg,
-        #F1E6F0,
-        #E8D7E9,
-        #D9B7C8
-    );
 
     transform: translateY(-6px);
 
-    box-shadow:
-        0 12px 28px rgba(36, 21, 47, 0.13);
 }
 
 
@@ -785,7 +506,6 @@ body {
 
     position: relative;
 
-    background: #F1E6F0;
 
     padding: 18px;
 }
@@ -808,9 +528,7 @@ body {
     top: 15px;
     left: 15px;
 
-    background: #E8D7E9;
 
-    color: var(--secondary);
 
     padding: 7px 11px;
 
@@ -828,7 +546,6 @@ body {
 }
 
 .products-section .product-category {
-    color: var(--text-light);
 
     font-size: 12px;
 
@@ -836,7 +553,6 @@ body {
 }
 
 .products-section .product-info h3 {
-    color: var(--primary);
 
     font-size: 17px;
     font-weight: 700;
@@ -850,9 +566,7 @@ body {
 .products-section .product-rating {
     display: inline-block;
 
-    background: var(--secondary);
 
-    color: #FFFFFF;
 
     font-size: 12px;
 
@@ -867,14 +581,12 @@ body {
 /* PRODUCT PRICE */
 
 .products-section .product-price {
-    color: var(--secondary);
 
     font-size: 20px;
     font-weight: 800;
 }
 
 .products-section .product-price del {
-    color: #9A879B;
 
     font-size: 13px;
     font-weight: 400;
@@ -894,17 +606,10 @@ body {
 
     margin-top: 16px;
 
-    border: none;
 
     border-radius: 30px;
 
-    background: linear-gradient(
-        110deg,
-        var(--primary),
-        var(--secondary)
-    );
 
-    color: #FFFFFF;
 
     font-size: 14px;
     font-weight: 700;
@@ -915,20 +620,13 @@ body {
 }
 
 .products-section .product-btn:hover {
-    background: linear-gradient(
-        110deg,
-        var(--secondary),
-        var(--accent-dark)
-    );
 
-    color: var(--primary);
 }
 
 
 /* NO PRODUCTS MESSAGE */
 
 .no-products {
-    color: var(--secondary);
 
     text-align: center;
 
@@ -943,9 +641,7 @@ body {
 ================================================== */
 
 .footer {
-    background: var(--primary-dark);
 
-    color: #FFFFFF;
 
     padding: 50px 20px;
 
@@ -955,15 +651,12 @@ body {
 }
 
 .footer h2 {
-    color: #FFFFFF;
 }
 
 .footer h2 span {
-    color: var(--accent);
 }
 
 .footer p {
-    color: var(--accent);
 
     font-size: 14px;
 

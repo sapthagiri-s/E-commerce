@@ -8,7 +8,7 @@
 /* ==================================================
    1. ROOT VARIABLES
 ================================================== */
-
+/*
 :root {
     --primary-dark: #180E20;
     --primary: #24152F;
@@ -34,7 +34,7 @@
    2. GENERAL
 ================================================== */
 
-html {
+/* html {
     scroll-behavior: smooth;
 }
 
@@ -46,14 +46,14 @@ body {
 
 * {
     box-sizing: border-box;
-}
+} */
 
 
 /* ==================================================
    3. NAVIGATION BAR
 ================================================== */
 
-.header {
+/* .header {
     width: 100%;
     position: sticky;
     top: 0;
@@ -63,9 +63,9 @@ body {
 
     box-shadow:
         0 3px 20px rgba(36, 21, 47, 0.07);
-}
+} */
 
-.navbar {
+/* .navbar {
     width: 100%;
     max-width: 1500px;
 
@@ -79,11 +79,11 @@ body {
     justify-content: space-between;
 
     gap: 25px;
-}
+} */
 
 
 /* LOGO */
-
+/*
 .navbar .logo {
     color: var(--primary) !important;
 
@@ -97,10 +97,10 @@ body {
 .navbar .logo span {
     color: var(--secondary);
 }
-
+ */
 
 /* NAVIGATION LINKS */
-
+/*
 .nav-links {
     display: flex;
     align-items: center;
@@ -131,12 +131,12 @@ body {
 .nav-links a:hover,
 .nav-links a.active {
     color: var(--secondary) !important;
-}
+} */
 
 
 /* NAVIGATION ACTIONS */
 
-.nav-actions {
+/* .nav-actions {
     display: flex;
     align-items: center;
 
@@ -163,11 +163,11 @@ body {
 
 .nav-actions a:hover {
     color: var(--secondary) !important;
-}
+} */
 
 
 /* SIGN IN BUTTON */
-
+/*
 .navbar .signin-btn {
     display: inline-block;
 
@@ -192,8 +192,7 @@ body {
     color: #FFFFFF !important;
 
     transform: translateY(-2px);
-}
-
+} */
 
 /* ==================================================
    4. BREADCRUMB

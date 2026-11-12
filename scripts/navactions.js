@@ -14,7 +14,7 @@ navactions.forEach(function (link) {
         console.log("Selected action:", page);
 
         if (page === "search") {
-            window.location.href = "/index.html#search";
+            window.location.href = "/pages/categories.html#productSearch";
         }
 
     });

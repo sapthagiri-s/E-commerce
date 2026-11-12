@@ -14,7 +14,7 @@ navactions.forEach(function (link) {
         console.log("Selected action:", page);
 
         if (page === "search") {
-            window.location.href = "/pages/home.html#search";
+            window.location.href = "/home.html#search";
         }
 
     });

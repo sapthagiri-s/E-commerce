@@ -11,7 +11,7 @@ navlinks.forEach(function (link) {
         if (page === "contact") {
             window.location.href = "/pages/contact.html";
         } else if (page === "home") {
-            window.location.href = "/home.html";
+            window.location.href = "/index.html";
         } else if (page === "about") {
             window.location.href = "/pages/about.html";
         } else if (page === "categories") {

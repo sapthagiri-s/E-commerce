@@ -1,0 +1,128 @@
+/* =================================
+   ABOUT PAGE
+================================= */
+
+.about-hero {
+    padding: 90px 20px;
+    text-align: center;
+    color: white;
+
+    background: linear-gradient(120deg,
+            #180e20,
+            #24152F,
+            #633B70);
+}
+
+.about-hero span {
+    color: #D9B7C8;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.about-hero h1 {
+    max-width: 750px;
+    margin: 25px auto;
+    font-size: clamp(32px, 5vw, 55px);
+}
+
+.about-hero p {
+    color: #E8D7E9;
+    font-size: 17px;
+}
+
+.about-section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 65px 25px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.about-content {
+    padding: 30px;
+    background: #FFFFFF;
+    border: 1px solid #E8D7E9;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(36, 21, 47, 0.07);
+}
+
+.about-content h2 {
+    color: #633B70;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    color: #806A82;
+    line-height: 1.8;
+}
+
+.why-choose {
+    padding: 50px 25px 80px;
+    text-align: center;
+}
+
+.why-choose h2 {
+    font-size: 35px;
+    margin-bottom: 35px;
+    color: #24152F;
+}
+
+.about-grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.about-card {
+    padding: 25px 18px;
+    background: linear-gradient(145deg, #FFFFFF, #F1E6F0);
+    border: 1px solid #D9B7C8;
+    border-radius: 16px;
+    transition: 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(36, 21, 47, 0.12);
+}
+
+.about-card h3 {
+    color: #633B70;
+    margin-bottom: 12px;
+}
+
+.about-card p {
+    color: #806A82;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* Responsive About Page */
+
+@media (max-width: 768px) {
+
+    .about-section {
+        grid-template-columns: 1fr;
+    }
+
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-hero {
+        padding: 65px 20px;
+    }
+}

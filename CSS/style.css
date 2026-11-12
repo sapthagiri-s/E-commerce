@@ -1,0 +1,208 @@
+/* =================================
+   1. GLOBAL STYLES
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    isolation: isolate;
+
+    background: linear-gradient(135deg,
+            #F8F4F7,
+            #EADCE7,
+            #F8F4F7);
+
+    font-family: 'Segoe UI', sans-serif;
+    color: #24152F;
+    overflow-x: hidden;
+}
+
+/* =================================
+   2. PERMANENT BACKGROUND DESIGN
+================================= */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+
+    background-image:
+        radial-gradient(circle,
+            transparent 0 100px,
+            rgba(99, 59, 112, 0.09) 101px 102px,
+            transparent 103px 155px,
+            rgba(99, 59, 112, 0.06) 156px 157px,
+            transparent 158px),
+        radial-gradient(rgba(99, 59, 112, 0.13) 1px,
+            transparent 1.5px),
+        radial-gradient(circle at 80% 30%,
+            rgba(217, 183, 200, 0.20),
+            transparent 35%);
+
+    background-size:
+        480px 480px,
+        25px 25px,
+        100% 100%;
+
+    background-position:
+        100px 80px,
+        0 0,
+        center;
+}
+
+/* =================================
+   3. NAVIGATION BAR
+================================= */
+
+.header {
+    background: linear-gradient(110deg,
+            #180e20,
+            #352044,
+            #633B70);
+
+    padding: 5px 0;
+
+    box-shadow: 0 5px 25px rgba(36, 21, 47, 0.25);
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1450px;
+    margin: auto;
+
+    padding: 20px 45px;
+}
+
+/* Logo */
+
+.logo {
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.logo span {
+    color: #D9B7C8;
+}
+
+/* Navigation links */
+
+.nav-links,
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #f5edf8;
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #D9B7C8;
+}
+
+/* Sign in */
+
+.signin-btn {
+    display: inline-block;
+
+    background: linear-gradient(120deg,
+            #D9B7C8,
+            #b98ba9);
+
+    color: #24152F !important;
+
+    padding: 11px 25px;
+    border-radius: 30px;
+
+    font-weight: 700 !important;
+
+    transition: all 0.3s ease;
+}
+
+.signin-btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(217, 183, 200, 0.3);
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 18px 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .nav-actions {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 550px) {
+    .logo {
+        font-size: 22px;
+    }
+
+    .nav-actions {
+        gap: 10px;
+    }
+
+    .nav-actions a {
+        font-size: 12px;
+    }
+
+    .nav-links {
+        gap: 13px;
+    }
+}
+/* =================================
+   16. ACCESSIBILITY
+================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
+

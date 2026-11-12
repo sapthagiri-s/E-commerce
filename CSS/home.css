@@ -1,0 +1,512 @@
+/* =================================
+   4. HERO SECTION
+================================= */
+
+.hero-banner {
+    min-height: 540px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    color: white;
+
+    background:
+        radial-gradient(circle at 15% 20%,
+            rgba(217, 183, 200, 0.20),
+            transparent 35%),
+
+        radial-gradient(circle at 85% 80%,
+            rgba(99, 59, 112, 0.65),
+            transparent 40%),
+
+        linear-gradient(120deg,
+            #180e20,
+            #24152F,
+            #633B70,
+            #352044);
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hero content */
+
+.hero-content {
+    width: 100%;
+    max-width: 850px;
+
+    position: relative;
+    z-index: 1;
+}
+
+/* Small label */
+
+.text-frame {
+    display: inline-block;
+
+    padding: 11px 24px;
+    margin-bottom: 30px;
+
+    border: 1px solid rgba(217, 183, 200, 0.5);
+
+    border-radius: 50px;
+
+    background: rgba(217, 183, 200, 0.10);
+
+    color: #f4dce9;
+
+    font-size: 13px;
+    letter-spacing: 1.5px;
+
+    backdrop-filter: blur(12px);
+}
+
+/* Main heading */
+
+.hero-content h1 {
+    font-size: clamp(38px, 5vw, 66px);
+
+    font-weight: 800;
+
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+
+    margin-bottom: 8px;
+}
+
+/* Gradient text */
+
+.gradient-text {
+    background: linear-gradient(90deg,
+            #ffffff,
+            #D9B7C8,
+            #b98ba9);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+}
+
+/* Hero description */
+
+.hero-content p {
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    max-width: 650px;
+    margin: 25px auto 35px;
+
+    color: #e4d8e9;
+    font-weight: 400;
+}
+
+/* =================================
+   5. SHOP BUTTON
+================================= */
+
+.shop-btn {
+    display: inline-block;
+
+    padding: 15px 36px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+
+    background: linear-gradient(110deg,
+            #D9B7C8,
+            #b98ba9);
+
+    color: #24152F;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    box-shadow:
+        0 8px 25px rgba(217, 183, 200, 0.15);
+
+    transition: all 0.35s ease;
+}
+
+.shop-btn:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(217, 183, 200, 0.35);
+}
+
+/* =================================
+   6. HERO BADGES
+================================= */
+
+.hero-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+    margin-bottom: 20px;
+
+    flex-wrap: wrap;
+}
+
+.badge-pill {
+    padding: 6px 14px;
+
+    border: 1px solid rgba(217, 183, 200, 0.55);
+    border-radius: 50px;
+
+    background: rgba(217, 183, 200, 0.10);
+
+    color: #f5dfea;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.badge-text {
+    color: #e8cfe0;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+/* =================================
+   7. FEATURED PRODUCTS SECTION
+================================= */
+
+.hero-banner1 {
+    width: 100%;
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 65px 40px;
+
+    background: transparent;
+
+    color: #24152F;
+    text-align: center;
+}
+
+/* Section content */
+
+.hero-banner1 .hero-content {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto 35px;
+
+    text-align: center;
+}
+
+/* Section heading */
+
+.hero-banner1 h2 {
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 800;
+
+    font-family: 'Segoe UI', sans-serif;
+
+    color: #24152F;
+
+    margin-bottom: 12px;
+    letter-spacing: -1px;
+
+    text-align: center;
+}
+
+/* Section description */
+
+.hero-banner1 p {
+    font-size: 15px;
+    color: #633B70;
+
+    margin: 0 auto 40px;
+
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* =================================
+   8. PRODUCT GRID
+================================= */
+
+.hero-banner1 .product-container {
+    display: grid;
+
+    /* Desktop: 2 products per row */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+/* =================================
+   9. PRODUCT CARDS
+================================= */
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-width: 0;
+    min-height: 420px;
+
+    padding: 18px;
+
+    background: linear-gradient(145deg,
+            #FFFFFF,
+            #F8F4F7);
+
+    border: 1px solid #D9B7C8;
+    border-radius: 18px;
+
+    color: #24152F;
+
+    box-shadow:
+        0 5px 20px rgba(36, 21, 47, 0.08);
+
+    transition: all 0.4s ease;
+}
+
+/* Product hover effect */
+
+.box:hover {
+    background: linear-gradient(135deg,
+            #F1E6F0 0%,
+            #E8D7E9 50%,
+            #D9B7C8 100%);
+
+    transform: translateY(-6px);
+
+    border-color: #B98BA9;
+
+    box-shadow:
+        0 12px 28px rgba(36, 21, 47, 0.13);
+}
+
+/* =================================
+   10. PRODUCT IMAGE
+================================= */
+
+.box img {
+    display: block;
+
+    width: 100%;
+    height: 210px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+
+    transition: transform 0.4s ease;
+}
+
+.box:hover img {
+    transform: scale(1.04);
+}
+
+/* =================================
+   11. PRODUCT TITLE
+================================= */
+
+.box h3 {
+    font-size: 17px;
+    font-weight: 700;
+
+    color: #24152F;
+
+    margin-bottom: 10px;
+}
+
+/* =================================
+   12. PRODUCT DESCRIPTION
+================================= */
+
+.box p {
+    font-size: 13px;
+    color: #806A82;
+
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+/* =================================
+   13. PRODUCT PRICE
+================================= */
+
+.price {
+    font-size: 20px;
+    font-weight: 800;
+
+    color: #633B70;
+
+    margin-bottom: 15px;
+}
+
+/* =================================
+   14. PRODUCT BUTTON
+================================= */
+
+.box button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: linear-gradient(110deg,
+            #24152F,
+            #633B70);
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.box button:hover {
+    background: linear-gradient(110deg,
+            #633B70,
+            #D9B7C8);
+
+    color: #24152F;
+}
+
+/* =================================
+   15. RESPONSIVE DESIGN
+================================= */
+
+
+@media (max-width: 768px) {
+    .hero-banner {
+        min-height: 450px;
+        padding: 60px 20px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .hero-banner1 {
+        padding: 50px 25px;
+    }
+}
+
+@media (max-width: 550px) {
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .text-frame {
+        font-size: 11px;
+    }
+
+    .hero-banner1 {
+        padding: 45px 15px;
+    }
+
+    .hero-banner1 .product-container {
+        grid-template-columns: 1fr;
+        max-width: 380px;
+    }
+}
+
+.search-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.search-section > h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.search-section > p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-box input {
+    width: 350px;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 14px 25px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.search-results {
+    padding: 30px 50px;
+}
+
+.search-results .product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.product-card {
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: white;
+}
+
+.product-card h3 {
+    margin-bottom: 15px;
+}
+
+.product-card p {
+    margin-top: 10px;
+    color: #555;
+}
+
+@media (max-width: 550px) {
+    .search-results {
+        padding: 30px 15px;
+    }
+
+    .search-box input {
+        min-width: 0;
+        width: 100%;
+    }
+}

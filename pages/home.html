@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ElectroHub</title>
+
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/home.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <h1 class="logo">ElectroHub<span>.</span></h1>
+
+            <ul class="nav-links">
+                <li><a href="#" data-page="home">Home</a></li>
+                <li><a href="#" data-page="categories">Categories</a></li>
+                <li><a href="#" data-page="about">About</a></li>
+                <li><a href="#" data-page="contact">Contact</a></li>
+            </ul>
+
+            <ul class="nav-actions">
+                <li><a href="#search" data-page="search" aria-label="Search">🔍</a></li>
+                <li><a href="#" data-page="language">🌐</a></li>
+                <li><a href="#" data-page="wishlist">♡</a></li>
+                <li><a href="#" data-page="cart">🛒</a></li>
+                <li><a href="#" class="signin-btn" data-page="signin">Sign in</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero-banner">
+
+        <div class="hero-content">
+
+            <span class="text-frame">
+                New Arrivals - Premium Collection
+            </span>
+
+            <h1>Discover Premium</h1>
+            <h1 class="gradient-text">Electronics</h1>
+
+            <p>
+                Experience the future with our curated
+                collection of cutting-edge technology.
+            </p>
+
+            <button class="shop-btn">Shop Now →</button>
+            <button class="shop-btn">Explore Collection</button>
+            <br>
+            <br>
+            <div class="hero-badge">
+
+                <span class="badge-pill">
+                    Genuine Products
+                    <br>
+                    <span class="badge-text">100% Authentic</span>
+                </span>
+
+                <span class="badge-pill">
+                    Fast Delivery
+                    <br>
+                    <span class="badge-text">Across India</span>
+                </span>
+
+                <span class="badge-pill">
+                    Warranty
+                    <br>
+                    <span class="badge-text">1-2 Years</span>
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PRODUCT SEARCH -->
+
+    <section class="search-section" id="search">
+
+        <h2>Find Your Products</h2>
+        <p>Search for your favourite electronics.</p>
+
+        <div class="search-box">
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search products..."
+                aria-label="Search products"
+            >
+            <button id="searchBtn" type="button">Search</button>
+        </div>
+
+        <div class="search-results">
+            <h2>Search Results</h2>
+            <div id="productContainer" class="product-container">
+                <p>Enter a product name to start searching.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- FEATURED PRODUCTS SECTION -->
+
+    <section class="hero-banner1">
+
+        <div class="hero-content">
+
+            <h2>Featured Products</h2>
+
+            <p>
+                Discover our handpicked collection
+                of premium electronics.
+            </p>
+
+        </div>
+
+        <div class="product-container">
+
+            <!-- We will add product cards here -->
+            <div class="box">
+
+                <img src="/assets/images/headphones.jpg" alt="Premium Wireless Headphones">
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        AUDIO COLLECTION
+                    </span>
+
+                    <h3>Premium Wireless Headphones</h3>
+
+                    <p>
+                        Experience immersive sound with
+                        premium noise cancellation.
+                    </p>
+
+                    <div class="price">
+                        ₹2,499
+                    </div>
+
+                    <button>Add to Cart →</button>
+
+                </div>
+            </div>
+            <div class="box">
+                <img src="/assets/images/charging_cable.avif" alt="Charging Cable">
+
+                <div class=" product-info">
+
+                <span class="product-category">
+                    CABLE COLLECTION
+                </span>
+
+                <h3>Charging Cable</h3>
+
+                <p>
+                    Experience immersive sound with
+                    premium noise cancellation.
+                </p>
+
+                <div class="price">
+                    ₹499
+                </div>
+
+                <button>Add to Cart →</button>
+
+            </div>
+        </div>
+        <div class="box">
+            <img src="/assets/images/wire_headset.avif" alt="Premium Wire Headset">
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    AUDIO COLLECTION
+                </span>
+
+                <h3>Premium Wire Headphones</h3>
+
+                <p>
+                    Experience immersive sound with
+                    premium noise cancellation.
+                </p>
+
+                <div class="price">
+                    ₹399
+                </div>
+
+                <button>Add to Cart →</button>
+
+            </div>
+        </div>
+        </div>
+
+    </section>
+    <script src="/scripts/navlink.js"></script>
+    <script src="/scripts/navactions.js"></script>
+    <script src="/scripts/search.js"></script>
+</body>
+
+</html>
